@@ -53,7 +53,7 @@
 }
 
 @media (max-width: 575px) {
-    .navbar {
+    .navbarContainer {
         flex-direction: column;
         gap: 20px;
     }
