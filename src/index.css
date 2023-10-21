@@ -43,7 +43,7 @@ table {
 }
 
 * {
-    font-family: Helvetica;
+    font-family: Helvetica, sans-serif !important;
     box-sizing: border-box;
 }
 

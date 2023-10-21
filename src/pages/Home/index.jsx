@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react"
+import MovieCard from "../../components/MovieCard";
+import '../MovieGrid.css'
 
 {/*pegando variáveis do .env no vite */}
 const moviesURL = import.meta.env.VITE_API;
@@ -17,8 +19,12 @@ const Home = () => {
     getTopRatedMovies(topRatedUrl)
   }, [])
   return (
-    <div>
-      Home
+    <div className="container">
+      <h2 className="title">Melhores filmes</h2>
+      {topMovies.length === 0 && <p>Carregando...</p>}
+      <div className="movies-container">
+        {topMovies.length > 0 && topMovies.map(movie => <MovieCard movie={movie} key={movie.id}/>)}
+      </div>
     </div>
   )
 }

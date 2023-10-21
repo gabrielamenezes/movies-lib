@@ -1,9 +1,15 @@
 .navbar {
     background-color: #1d1f2b;
     width: 100%;
-    padding: 2rem 0;
+    padding: 1rem 2rem;
+    
+}
+.navbarContainer {
+    max-width: 1440px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+
     align-items: center;
 }
 .navbar .logo {
@@ -17,10 +23,14 @@
     justify-content: center;
     align-items: center;
     height: 40px;
+    gap: 0.5rem;
 }
 .navbar input {
-    background-color: #1d1f2b;
+    background-color: #292c42;
+    padding: 0.2rem 0.8rem;
     width: 250px;
+    color: #fff;
+    outline: none;
     height: 20px;
     border: none;
     height: 100%;
@@ -28,10 +38,15 @@
 .navbar button {
     border: none;
     background-color: #6421ff;
-    font-size: 20px;
     color: #fff;
     cursor: pointer;
+    font-size: 1.3rem;
+    padding: .3rem;
+    border-radius: 4px;
     height: 100%;
+    display: flex;
+    align-items: center;
+    transition: .4s;
 }
 .navbar button:hover {
     filter: brightness(1.2);
